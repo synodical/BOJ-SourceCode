@@ -1,10 +1,3 @@
-//
-//  14442.cpp
-//  BOJ Source Code
-//
-//  Created by LeeYeEun on 2021/11/12.
-//
-
 #include <iostream>
 #include <queue>
 #include <string>
@@ -14,8 +7,8 @@ using ll = long long;
 const int MAX = 1001;
 int n, m, k;
 char arr[MAX][MAX];
-int dx[] = {1, 0, -1, 0};
-int dy[] = {0, -1, 0, 1};
+int dx[] = { 0, 0, 1, -1 };
+int dy[] = { 1, -1, 0, 0 };
 bool visited[MAX][MAX][11];
 
 void bfs(int a, int b) {
@@ -69,5 +62,6 @@ int main(void) {
     bfs(0, 0);
     return 0;
 }
+
 
 
